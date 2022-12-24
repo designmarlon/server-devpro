@@ -1,8 +1,8 @@
 const express = require('express')
 const app = express()
 
-app.listen(5005, () => console.log('SERVIDOR LEVANTADO'))
-//app.listen(process.env.PORT || 5005, () => console.log('SERVIDOR LEVANTADO'))
+//app.listen(5005, () => console.log('SERVIDOR LEVANTADO'))
+app.listen(process.env.PORT || 5005, () => console.log('SERVIDOR LEVANTADO'))
 
 //DB conection
 const mongoose = require('mongoose');
